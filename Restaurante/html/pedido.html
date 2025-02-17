@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Nordestino</title>
+    <link rel="stylesheet" href="pedido.css">
+</head>
+
+<body>
+    <header>
+        <h1><img src="../IMG/logosaborserrano1.png" alt=""><br></h1>
+        <h1>Restaurante sabor Serrano</h1>
+    </header>
+    <div class="caixa">
+        <section id="pedidos" class="pedidos">
+            <h2>Faça seu Pedido</h2>
+            <p>Escolha seus pratos e faça seu pedido conosco.</p>
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                
+                <label for="categoria">Escolha a categoria:</label>
+                <select id="categoria" name="categoria" required onchange="atualizarPratos()">
+                    <option value="">Selecione uma categoria</option>
+                    <option value="almoco">Almoço</option>
+                    <option value="jantar">Jantar</option>
+                    <option value="sobremesa">Sobremesa</option>
+                    <option value="bebidas">Bebidas</option>
+                </select>
+                
+                <label for="pedido">Escolha o prato:</label>
+                <select id="pedido" name="pedido" required>
+                    <option value="">Selecione um prato</option>
+                </select>
+                
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" value="1" required>
+                
+                <a href="index.html">pedido concluido</a>
+            </form>
+        </section>
+    </div>
+    
+    <script>
+        function atualizarPratos() {
+            const categoria = document.getElementById("categoria").value;
+            const selectPratos = document.getElementById("pedido");
+            
+            // Limpa as opções anteriores
+            selectPratos.innerHTML = '<option value="">Selecione um prato</option>';
+
+            // Opções de pratos por categoria
+            const pratos = {
+                almoco: [
+                    { value: "buchada", text: "Buchada" },
+                    { value: "bobo_de_camarao", text: "Bobó de Camarão" },
+                    { value: "galinha_cabidela", text: "Galinha Cabidela" },
+                    { value: "caranguejada", text: "Caranguejada" }
+                ],
+                jantar: [
+                    { value: "tapioca_recheada", text: "Tapioca Recheada" },
+                    { value: "cuscuz_temperado", text: "Cuscuz Temperado" },
+                    { value: "macaxeira_carne_sol", text: "Macaxeira com Carne de Sol" },
+                    { value: "bolo_pe_moleque", text: "Bolo Pé de Moleque" }
+                ],
+                sobremesa: [
+                    { value: "pudim_rapadura", text: "Pudim de Rapadura" },
+                    { value: "pe_de_moleque", text: "Pé de Moleque" },
+                    { value: "bolo_de_rolo", text: "Bolo de Rolo" }
+                ],
+                bebidas: [
+                    { value: "suco", text: "Suco" },
+                    { value: "cafe", text: "Café" },
+                    { value: "caldo_verde", text: "Caldo Verde" },
+                    { value: "cajuina", text: "Cajuína" }
+                ]
+            };
+
+            // Adiciona os pratos conforme a categoria selecionada
+            if (pratos[categoria]) {
+                pratos[categoria].forEach(prato => {
+                    const option = document.createElement("option");
+                    option.value = prato.value;
+                    option.textContent = prato.text;
+                    selectPratos.appendChild(option);
+                });
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+body { 
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../IMG/xilo.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.caixa {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.51);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px hsla(60, 2%, 21%, 0.767);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+    font-family: Arial;
+    font-size: 1.8rem;
+}
+
+label {
+    font-size: 1.7rem;
+    margin-bottom: 8px;
+    display: block;
+    font-family: Trebuchet MS;
+    text-align: center;
+    margin-top: 5px;
+}
+
+input[type="text"], input[type="number"], select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #b8b3b3c5;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.pedidos {
+    background-color: #d6d0d0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.pedidos a {
+    text-decoration: none;
+    background: #000000;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #ffffff;
+    font-family: 'Georgia', serif;
+}
+
+.pedidos a:hover {
+    background-color: #d9e9da;
+}
+
+/* PC */
+@media (min-width: 1024px) {
+    .caixa {
+        width: 80%;
+        max-width: 900px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    input[type="text"], input[type="number"], select {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .pedidos {
+        padding: 40px;
+        width: 80%;
+        max-width: 700px;
+    }
+}
+
+/* notebook */
+@media (max-width: 1024px) and (min-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    input[type="text"], input[type="number"], select {
+        width: 85%;
+        margin-left: 7.5%;
+    }
+
+    .pedidos {
+        padding: 25px;
+        width: 85%;
+        max-width: 600px;
+    }
+
+    .caixa {
+        width: 85%;
+    }
+}
+
+/* celulares */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"], input[type="number"], select {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .pedidos {
+        padding: 20px;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .caixa {
+        width: 95%;
+    }
+}

@@ -1,0 +1,216 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@400;700&family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+    url('../IMG/rest2.jfif') center/cover no-repeat fixed;
+}
+
+/* Caixa principal */
+.caixa {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ebe6e3d7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px hsla(71, 86%, 39%, 0.767);
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+/* Parágrafos estilizados */
+.p1 {
+    font-family: 'Poppins', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+.p2 {
+    margin-top: 1%;
+    font-family: 'Playfair Display', serif;
+    color: #3b1d03;
+    filter: drop-shadow(2px 2px 2px rgba(71, 41, 2, 0.514));
+}
+
+/* Imagens */
+img {
+    margin: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Labels */
+label {
+    font-size: 1.5rem;
+    display: block;
+    font-family: 'Josefin Sans', serif;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Inputs e Textarea */
+input[type="text"], textarea, select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #550404;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Estrelas de avaliação */
+.estrelinha {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+}
+
+.estrelinha input {
+    display: none;
+}
+
+.estrelinha label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.estrelinha input:checked ~ label {
+    color: #ffd700; /* Cor da estrela quando selecionada */
+}
+
+.estrelinha input:checked ~ label:hover,
+.estrelinha label:hover {
+    color: #bbad76; /*cor ao passar o mause */
+}
+
+/* Botão */
+.botao{
+    width: 100px;
+    margin: auto ;
+    background-color: #7c7774d7;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px hsla(66, 5%, 41%, 0.767);
+}
+.botao a {
+    color: rgb(0, 0, 0); 
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: 0.3s;
+    ;
+}
+
+.botao a:hover {
+    color: rgb(31, 28, 28);
+}
+
+
+/*tablets(máx: 1024px) */
+@media (max-width: 1024px) {
+    .caixa {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .p1 {
+        font-size: 22px;
+    }
+
+    label {
+        font-size: 1.3rem;
+    }
+
+    input[type="text"], textarea, select {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+}
+
+/*pc*/
+@media (max-width: 768px) {
+    .caixa {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .p1 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    input[type="text"], textarea, select {
+        width: 95%;
+        font-size: 0.85rem;
+    }
+
+    .estrelinha label {
+        font-size: 1.8rem;
+    }
+}
+
+/*celulares*/
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .p1 {
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input[type="text"], textarea, select {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .estrelinha {
+        gap: 5px;
+    }
+
+    .estrelinha label {
+        font-size: 1.5rem;
+    }
+}

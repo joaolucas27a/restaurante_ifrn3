@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor da serra</title>
+    <link rel="stylesheet" href="cardapio.css">
+</head>
+
+        <!-- Cabeçalho -->
+        <header>
+            <div class="caixa1">
+                <img src="../IMG/logosaborserrano1.png" >
+                <p class="l1">O melhor da culinária nordestina!</p>
+                <p class="l2">deslize para mais</p>
+            </div>
+        </header>
+    
+        <!-- Cardápio -->
+        <main>
+            <section id="Cardapio.png" class="cardapio">
+                <div class="caixa2">
+                    <h2><p class="l3"></p>Nosso Cardápio</h2>
+                    <p class="l4">Confira nosso cardápio com deliciosos pratos da culinária nordestina!</p>
+                    
+                    <!-- Imagem do Cardápio -->
+                        <img id="minhaImagem" src="../IMG/2.png" alt="Imagem 1" 
+                             onmouseover="trocarImagem()" onmouseout="restaurarImagem()">
+                    
+                        <script>
+                            function trocarImagem() {
+                                document.getElementById("minhaImagem").src = "../IMG/1.png";
+                            }
+                    
+                            function restaurarImagem() {
+                                document.getElementById("minhaImagem").src = "../IMG/2.png";
+                            }
+                        </script>    
+                    <br>
+                    <nav>
+                        <div class="caixa3">
+                            <a href="index.html">Início</a>
+                            <a href="pedido.html">pedido</a>
+                            <a href="login.html">login</a>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+    

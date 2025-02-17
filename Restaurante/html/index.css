@@ -1,0 +1,229 @@
+/* Importação de fontes elegantes e rústicas para um restaurante nordestino */
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Sriracha&family=Patrick+Hand&family=Berkshire+Swash&family=Special+Elite&family=Caveat&family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=Lobster&family=Kaushan+Script&family=Amatic+SC:wght@400;700&family=Josefin+Sans:wght@400;700&family=Fredoka+One&family=Pacifico&family=Baloo+2:wght@400;700&display=swap');
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('../IMG/xilo.png') center/cover no-repeat fixed;
+    color: #3e2723;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Cabeçalho */
+header {
+    background: rgba(231, 231, 222, 0.39);
+    color: white;
+    padding: 40px 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem; /* Ajustado para telas menores */
+}
+
+header p {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.25rem;
+}
+
+/* Navegação */
+nav {
+    background: #3b3b3f;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.125rem;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #f4f4f4;
+}
+
+/* Introdução */
+.introdução {
+    padding: 100px 20px;
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 12px;
+}
+
+.introdução h2 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2.5rem;
+    color: #ffffff;
+    background-color: rgba(95, 62, 1, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Botões */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.buttons button {
+    background: #0e0d0d;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.125rem;
+    border-radius: 35px;
+    transition: 0.3s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: #444340;
+    color: #f4f4f4;
+}
+
+/* Carrossel de imagens */
+.carrossel {
+    margin: 40px 0;
+}
+
+.carrossel-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.carrossel img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    max-height: 170px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.carrossel img:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background: #5a2d0c;
+    padding: 30px;
+    color: white;
+    font-size: 1.125rem;
+}
+
+
+
+/* pc */
+@media (max-width: 1024px) and (min-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.125rem;
+    }
+
+    .introdução h2 {
+        font-size: 2.25rem;
+    }
+
+    .buttons button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    .carrossel img {
+        max-width: 250px;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
+
+/* notebook */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .introdução {
+        padding: 50px 20px;
+    }
+
+    .introdução h2 {
+        font-size: 2rem;
+    }
+
+    .buttons button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .carrossel img {
+        max-width: 200px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+/* celulares */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .introdução {
+        padding: 40px 10px;
+    }
+
+    .introdução h2 {
+        font-size: 1.8rem;
+    }
+
+    .buttons button {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+    }
+
+    .carrossel img {
+        max-width: 180px;
+    }
+
+    footer {
+        font-size: 0.875rem;
+    }
+}

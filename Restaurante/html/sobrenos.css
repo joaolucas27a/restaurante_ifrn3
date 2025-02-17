@@ -1,0 +1,155 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Sriracha&family=Patrick+Hand&family=Berkshire+Swash&family=Special+Elite&family=Caveat&family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=Lobster&family=Kaushan+Script&family=Amatic+SC:wght@400;700&family=Josefin+Sans:wght@400;700&family=Fredoka+One&family=Pacifico&family=Baloo+2:wght@400;700&display=swap');
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url('../IMG/xilo.png') center/cover no-repeat fixed;
+    color: #3e2723;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background: rgba(94, 88, 88, 0.418);
+    color: white;
+    padding: 60px 0;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 4rem; /* Ajustado para dispositivos maiores */
+}
+
+header p {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+}
+
+/* Conteúdo */
+.trabalho {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
+    max-width: 800px;
+}
+
+
+.trabalho p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #3e2723;
+}
+
+/* Rodapé */
+footer {
+    background: #20222091;
+    padding: 30px;
+    color: white;
+    font-size: 1.125rem;
+}
+
+.sobrenos a {
+    text-decoration: none;
+    background: #000000;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ffffff;
+    font-family: 'Georgia', serif;
+}
+
+/* Media Queries */
+
+/* pc */
+@media (max-width: 1024px) and (min-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.25rem;
+    }
+
+    .trabalho {
+        padding: 40px;
+    }
+
+    .trabalho h2 {
+        font-size: 2.5rem;
+    }
+
+    .trabalho p {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
+
+/* tablets */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    .trabalho {
+        padding: 30px;
+    }
+
+    .trabalho h2 {
+        font-size: 2rem;
+    }
+
+    .trabalho p {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/*celulares */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .trabalho {
+        padding: 20px;
+    }
+
+    .trabalho h2 {
+        font-size: 1.8rem;
+    }
+
+    .trabalho p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.875rem;
+    }
+}

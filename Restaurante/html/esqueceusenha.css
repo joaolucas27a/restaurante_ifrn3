@@ -1,0 +1,126 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), 
+    url('../IMG/xilo.png') center/cover no-repeat fixed;
+    color: #3e2723;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Evita cortes em telas pequenas */
+}
+
+/* Caixa de conteúdo */
+.caixa {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título */
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Rótulos */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3e2723;
+    border-radius: 5px;
+}
+
+/* Links */
+a {
+    display: block;
+    margin-top: 15px;
+    color: #3e2723;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #5a2d0c;
+}
+
+
+/* notebook*/
+@media (max-width: 1024px) {
+    .caixa {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+/* pc */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .caixa {
+        width: 95%;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+}
+
+/*celulares */
+@media (max-width: 480px) {
+    .caixa {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}
